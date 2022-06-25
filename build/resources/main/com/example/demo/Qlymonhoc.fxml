@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#mouseClick" prefHeight="500.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.QlymonController">
+   <children>
+      <Button layoutX="606.0" layoutY="461.0" mnemonicParsing="false" onAction="#exit" text="Thoát" />
+      <Label layoutX="248.0" layoutY="32.0" text="Quản lý môn học">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableMH" layoutX="180.0" layoutY="105.0" onMouseClicked="#selectItem" prefHeight="200.0" prefWidth="318.0">
+        <columns>
+          <TableColumn fx:id="maMHColumn" prefWidth="96.800048828125" text="Mã môn học" />
+          <TableColumn fx:id="tenMHColumn" prefWidth="109.59999084472656" text="Tên môn học" />
+            <TableColumn fx:id="soTinColumn" prefWidth="110.4000244140625" text="Số tín chỉ" />
+        </columns>
+      </TableView>
+      <Button layoutX="328.0" layoutY="404.0" mnemonicParsing="false" onAction="#addMH" text="Thêm" />
+      <Button layoutX="414.0" layoutY="404.0" mnemonicParsing="false" onAction="#updateMH" prefHeight="26.0" prefWidth="46.0" text="Sửa" />
+      <Button layoutX="498.0" layoutY="404.0" mnemonicParsing="false" onAction="#deleteMH" prefHeight="26.0" prefWidth="46.0" text="Xóa" />
+      <TextField fx:id="txtMaMH" layoutX="120.0" layoutY="341.0" promptText="Mã môn học" />
+      <TextField fx:id="txtTenMH" layoutX="120.0" layoutY="404.0" promptText="Tên môn học" />
+      <TextField fx:id="txtSoTC" layoutX="339.0" layoutY="341.0" promptText="Số tín chỉ" />
+   </children>
+</AnchorPane>

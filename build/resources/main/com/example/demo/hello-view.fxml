@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="holdPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <left>
+      <AnchorPane prefHeight="321.0" prefWidth="142.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnQlySV" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#openQlySV" prefHeight="50.0" prefWidth="113.0" text="Quản lý sinh viên" />
+            <Button id="btnDkyHoc" layoutX="13.0" layoutY="179.0" mnemonicParsing="false" onAction="#openQlyDkyHoc" prefHeight="46.0" prefWidth="115.0" text="Đăng ký học" />
+            <Button id="btnQlyMon" layoutX="13.0" layoutY="97.0" mnemonicParsing="false" onAction="#openQlyMon" prefHeight="48.0" prefWidth="116.0" text="Quản lý môn học" />
+            <Button id="btnNhapDiem" layoutX="14.0" layoutY="257.0" mnemonicParsing="false" onAction="#openQlyDiem" prefHeight="49.0" prefWidth="114.0" text="Nhập điểm" />
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="138.0" layoutY="22.0" text="Chương trình quản lý sinh viên">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <ImageView fitHeight="312.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../assets/TLU.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
